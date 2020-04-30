@@ -5,21 +5,21 @@
 // ========== Theme Color ========== //
 // Config here to change theme color
 // Default | Mint Green | Cobalt Blue | Hot Pink | Dark Violet
-$theme-color-config: 'Default';
+$theme-color-config: "Mint Green";
 
 // Default theme color map
 $theme-color-map: (
-  'Default': #c05b4d #f8f5ec,
-  'Mint Green': #16982B #f5f5f5,
-  'Cobalt Blue': #0047AB #f0f2f5,
-  'Hot Pink': #FF69B4 #f8f5f5,
-  'Dark Violet': #9932CC #f5f4fa
+  "Default": #c05b4d #f8f5ec,
+  "Mint Green": #16982b #f5f5f5,
+  "Cobalt Blue": #0047ab #f0f2f5,
+  "Hot Pink": #ff69b4 #f8f5f5,
+  "Dark Violet": #9932cc #f5f4fa,
 );
 
 // Check theme color config.
 // if it does not exist, use default theme color.
 @if not(map-has-key($theme-color-map, $theme-color-config)) {
-  $theme-color-config: 'Default';
+  $theme-color-config: "Default";
 }
 $theme-color-list: map-get($theme-color-map, $theme-color-config);
 
@@ -29,7 +29,6 @@ $theme-color: nth($theme-color-list, 1) !default;
 // Deputy theme color of the site.
 $deputy-color: nth($theme-color-list, 2) !default;
 
-
 // ========== Color ========== //
 $black: #0a0a0a !default;
 $white: #fefefe !default;
@@ -37,10 +36,9 @@ $light-gray: #e6e6e6 !default;
 $gray: #cacaca !default;
 $dark-gray: #8a8a8a !default;
 
-
 // ========== Global ========== //
 // Text color of the body.
-$global-font-color: rgba(0, 0, 0, .84) !default;
+$global-font-color: rgba(0, 0, 0, 0.84) !default;
 
 // Font size attribute applied to '<html>' and '<body>'.
 $global-font-size: 18px !default;
@@ -55,7 +53,7 @@ $global-container-padding: 0 20px !default;
 $global-lineheight: 1.8 !default;
 
 // Font family of the site.
-$global-font-family: 'Source Sans Pro', 'Helvetica Neue', Arial, sans-serif !default;
+$global-font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif !default;
 
 // Serif font family of the site.
 $global-serif-font-family: Athelas, STHeiti, Microsoft Yahei, serif !default;
@@ -70,9 +68,8 @@ $global-headings: (
   h3: 1.3em,
   h4: 1.2em,
   h5: 1.1em,
-  h6: 1em
+  h6: 1em,
 ) !default;
-
 
 // ========== Header ========== //
 // Font size of the logo.
@@ -130,7 +127,6 @@ $post-tags-padding: 15px 0 !default;
 // Font size of post pagination.
 $post-nav-font-size: 18px !default;
 
-
 // ========== TOC ========== //
 // Width of the post toc.
 $post-toc-width: 200px !default;
@@ -177,8 +173,8 @@ $code-color: #c7254e !default;
 $code-font-size: 0.9em !default;
 
 // Font family of the code.
-$code-font-family: Menlo, Consolas, "Source Code Pro", Inconsolata, Monaco, "Courier New",
- monospace !default;
+$code-font-family: Menlo, Consolas, "Source Code Pro", Inconsolata, Monaco,
+  "Courier New", monospace !default;
 
 // Color of code highlight, solarized.
 $code-highlight-color: (
@@ -189,13 +185,11 @@ $code-highlight-color: (
   attribute: #b58900,
   symbol: #cb4b16,
   built_in: #dc322f,
-  formula: #eee8d5
+  formula: #eee8d5,
 ) !default;
-
 
 // Color of the code background.
 $code-background: $deputy-color !default;
-
 
 // ========== Pagination ========== //
 // Margin of the pagination.
@@ -203,7 +197,6 @@ $pagination-margin: 2em 0 !default;
 
 // Font size of the pagination (Without post, post pagination see line 140).
 $pagination-font-size: 20px !default;
-
 
 // ========== Footer ========== //
 // Margin top of the footer.
@@ -217,7 +210,6 @@ $social-icon-font-size: 1.7em !default;
 
 // Margin of the copyright.
 $copyright-margin: 10px 0 !default;
-
 
 // ========== Archive ========== //
 // Margin of the archive.
@@ -251,7 +243,6 @@ $archive-post-hover-transition: 0.2s ease-out !default;
 // Transform of the archive post when hover it.
 $archive-post-hover-transform: translateX(4px) !default;
 
-
 // ========== Tags ========== //
 // Font soze of the tag cloud title.
 $tag-cloud-title-size: 24px !default;
@@ -261,7 +252,6 @@ $tag-cloud-title-border-bottom: 2px solid $theme-color !default;
 
 // Margin of the tag cloud tags link.
 $tag-cloud-tags-link-margin: 5px 10px !default;
-
 
 // ========== Categories ========== //
 // Font soze of the categories title.
